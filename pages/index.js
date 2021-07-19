@@ -5,7 +5,7 @@ function ProfileSidebar(props) {
    return(
       <Box>
          <img src={`https:///github.com/${props.githubUser}.png`} alt="Imagem GitHub" style={{ borderRadius: '8px' }}/>
-      </Box>
+      </Box> 
    );
 }
 
@@ -15,7 +15,7 @@ export default function Home() {
    return (
       <MainGrid>
          <div className='profileArea' style={{ gridArea: 'profileArea' }}>
-            {/* <ProfileSidebar githubUser={githubUser} /> */}
+            <ProfileSidebar githubUser={githubUser} />
          </div>
 
          <div className='welcomeArea' style={{ gridArea: 'welcomeArea' }}>
